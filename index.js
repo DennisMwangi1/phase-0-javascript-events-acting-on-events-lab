@@ -2,7 +2,7 @@ const dodger = document.getElementById("dodger");
 dodger.style.backgroundColor = "#FF69B4";
 dodger.style.bottom = "0px";
 dodger.style.left = "10px";
-dodger.style.right = "50px"
+dodger.style.right = "10px"
 
 
   document.addEventListener("keydown", function (e) {
@@ -27,7 +27,7 @@ dodger.style.right = "50px"
     const rightNumbers = dodger.style.right.replace("px", "");
     const right = parseInt(rightNumbers, 10);
   
-    if (left > 0) {
+    if (right > 0) {
       dodger.style.right = `${right - 1}px`;
     }
   }
